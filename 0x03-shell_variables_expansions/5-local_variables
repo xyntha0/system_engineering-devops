@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Environment Variables:"
+printenv
+echo -e "\nLocal Variables and Functions:"
+declare -p
