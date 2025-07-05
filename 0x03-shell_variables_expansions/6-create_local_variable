@@ -1,3 +1,2 @@
 #!/bin/bash
 local BEST="School"
-echo "The local variable BEST is set to: $BEST"
