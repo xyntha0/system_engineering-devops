@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays the part of filenames after the first dash (-), excluding hidden files.
+
+for file in *  # Avoid using $(ls)
+do
+    name="${file#*-}"  # Remove everything before the first dash
+    echo "$name"
+done
