@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# This script runs an infinite loop that handles SIGTERM signals gracefully
 
 # Function to handle SIGTERM
 handle_sigterm() {
