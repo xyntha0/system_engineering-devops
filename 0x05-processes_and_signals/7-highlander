@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# A Bash script that runs infinitely and handles SIGTERM by printing "OK"
+# A Bash script that runs infinitely and handles SIGTERM by printing "I am invincible!!!" and continues
 
-trap 'echo "OK"' SIGTERM  # When SIGTERM is received, it prints "OK"
+# Trap SIGTERM signal and display message
+trap 'echo "I am invincible!!!"' SIGTERM
 
+# Infinite loop that prints the phrase every 2 seconds
 while true
 do
   echo "To infinity and beyond"
