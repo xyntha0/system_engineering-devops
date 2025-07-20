@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# A Bash script that runs infinitely and prints "OK" upon receiving a SIGTERM signal
+# A Bash script that handles the SIGTERM signal and prints "OK" when received
 
-# Trap SIGTERM signal and display "OK"
-trap 'echo "OK"' SIGTERM
+# Trap the SIGTERM signal and print "OK"
+trap 'echo "OK";' SIGTERM
 
 # Infinite loop that prints "To infinity and beyond" every 2 seconds
 while true
