@@ -1,12 +1,16 @@
-#!/usr/bin/env bash
-# A Bash script that runs an infinite loop and displays "OK" when it receives a SIGTERM signal.
+#!/bin/bash
 
-# Trap SIGTERM signal and print "OK", then continue running
-trap 'echo "OK";' SIGTERM
+# Function to handle SIGTERM
+handle_sigterm() {
+    echo "I am invincible!!!"
+}
 
-# Infinite loop that prints "To infinity and beyond" every 2 seconds
+# Trap SIGTERM signal
+trap handle_sigterm SIGTERM
+
+# Infinite loop
 while true
 do
-  echo "To infinity and beyond"
-  sleep 2
+    echo "To infinity and beyond"
+    sleep 2
 done

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Find and kill the 7-highlander process
+pkill -f 7-highlander
